@@ -3,13 +3,14 @@ import thunk from "redux-thunk";
 import { composeWithDevTools } from "redux-devtools-extension";
 import {
     getTodoReducer,
+    newEmailReducer,
     newTodoReducer,
 } from "./redux/reducer/todo.reducer";
 
 const reducer = combineReducers({
     createTodo: newTodoReducer,
     getTodos: getTodoReducer,
-
+    updateEmail: newEmailReducer,
 });
 
 let intialState = {};

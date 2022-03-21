@@ -1,7 +1,7 @@
 const Todo = require("../model/todo.model");
 const ApiFeatures = require("../utils/apiFeatures");
 
-// Create Product --- Admin
+// Create Todo
 exports.createTodo = async (req, res, next) => {
     try {
         const todo = await Todo.create(req.body);
@@ -70,7 +70,7 @@ exports.updateEmail = async (req, res) => {
     }
 };
 
-// Delete Todo --- Admin
+// Delete Todo 
 exports.deleteTodo = async (req, res) => {
     try {
         let todo = await Todo.findById(req.params.id);

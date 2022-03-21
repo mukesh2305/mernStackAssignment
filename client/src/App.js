@@ -10,6 +10,8 @@ import { EditOutlined } from "@ant-design/icons";
 function App() {
 	const { resultPerPage, todos, todosCount, } = useSelector(state => state.getTodos.todos);
 	const { loading } = useSelector(state => state.getTodos);
+	const updateEmail = useSelector(state => state.updateEmail);
+	console.log("updateTodo", updateEmail);
 
 
 	// columns name for table
